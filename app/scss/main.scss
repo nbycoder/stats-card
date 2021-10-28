@@ -9,7 +9,7 @@ body {
 
 section {
     background-color: $darkdblue;
-    width: 300px;
+    width: 260px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -17,11 +17,11 @@ section {
     margin-top: 50px;
     text-align: center;
     img {
-        width: 300px;
+        width: 260px;
         display: flex;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
-        
+        filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(230deg) saturate(600%) contrast(0.8);
     }
     h1 {
         color: white;
@@ -69,3 +69,5 @@ footer {
         text-decoration: none;
     }
 }
+
+@import 'responsive';
