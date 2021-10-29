@@ -41,6 +41,12 @@ section {
 #insights {
     color: $softviolet
 }
+
+.stat, .font {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .font {
     color: $white60;
     font-family: $paragraph;

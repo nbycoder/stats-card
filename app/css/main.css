@@ -39,6 +39,11 @@ section {
 #insights {
   color: #aa5cdb; }
 
+.stat, .font {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
 .font {
   color: rgba(255, 255, 255, 0.6);
   font-family: "Lexend Deca", sans-serif;
