@@ -1,10 +1,12 @@
-@import 'resets';
-@import 'variables';
+@use 'resets';
+@use 'variables';
 @function weights ($weight-name) {
     @return map-get($font-weights, $weight-name);
 }
 body {
     background-color: $vdarkblue;
+    display: flex;
+    justify-content: space-between;
 }
 
 section {
@@ -44,7 +46,6 @@ section {
 
 .stat, .font {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
 }
 .font {
