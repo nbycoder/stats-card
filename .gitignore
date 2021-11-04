@@ -2,3 +2,12 @@
 .sass-cache/8739f2b31b4b0a1936f53bcb95ab6d2a6ee89397/_resets.scssc
 *.scssc
 *.json
+old/index.html
+old/app/css/main.css
+old/app/css/main.css.map
+app/scss/main.scss
+old/app/scss/queries.scss
+old/app/scss/_resets.scss
+old/app/scss/_responsive.scss
+old/app/scss/_variables.scss
+old/app/scss/main.scss
