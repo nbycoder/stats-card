@@ -63,5 +63,7 @@ body {
 
 footer {
     padding-top: 2px;
+    & a {
     text-decoration: none;
+    }
 }
