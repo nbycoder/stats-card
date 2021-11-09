@@ -19,6 +19,7 @@
         grid-template-columns: 1fr 1fr;
         margin: 0 auto;
         align-items: center;
+        width: 680px;
         }
         .text-box {
             order: -1;
@@ -28,7 +29,8 @@
             font-size: 1.4rem;
         }
         .main {
-        font-size: 0.91rem;
+            font-size: 0.91rem;
+            text-align: left;
         }
         .stats {
         display: flex;
@@ -42,6 +44,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0 auto;
+    width: 800px;
     align-items: center;
     }
     .text-box {
@@ -52,7 +55,9 @@
         font-size: 1.7rem;
     }
     .main {
-    font-size: 1rem;
+        font-size: 1rem;
+        text-align: left;
+        line-height: 1.2;
     }
     .stats{
     display: flex;
@@ -66,6 +71,7 @@
     grid-template-columns: 1fr 1fr;
     margin: 0 auto;
     align-items: center;
+    width: 1000px;
     }
     .text-box {
         order: -1;
@@ -73,6 +79,10 @@
     }
     h1  {
         font-size: 1.75rem;
+    }
+    .main {
+        text-align: left;
+        line-height: 1.2;
     }
     .stats {
     display: flex;
