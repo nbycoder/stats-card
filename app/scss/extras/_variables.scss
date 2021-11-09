@@ -1,0 +1,28 @@
+//* Colors
+    //! Primary
+
+    $vdarkblue: hsl(233, 47%, 7%); //~ main bg
+    $darkblue: hsl(244, 38%, 16%); //~ card bg
+    $softviolet: hsl(277, 64%, 61%); //~ accent
+
+    //! Neutral
+
+    $white: hsl(0, 0%, 100%); //~ main heading + stats
+    $white75: hsla(0, 0%, 100%, 0.75); //~ main paragraph
+    $white60: hsla(0, 0%, 100%, 0.6); //~ stat #
+
+//* Fonts
+    //! Lexend Deca - stats font
+     @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+     $stat:  'Lexend Deca', sans-serif;
+
+    //! Inter -  body + headings font
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+    $main: 'Inter', sans-serif;
+
+    //! font-weights
+
+    $weights: (
+        'regular': 400,
+        'bold': 700
+    )

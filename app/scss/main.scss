@@ -1,73 +1,59 @@
-@import 'resets';
-@import 'variables';
+@use 'extras' as *;
 @function weights ($weight-name) {
-    @return map-get($font-weights, $weight-name);
+      @return map-get($weights, $weight-name);
 }
+
 body {
+    font-size: 15px;
+    font-family: $main;
     background-color: $vdarkblue;
-}
-
-section {
-    background-color: $darkdblue;
-    width: 260px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    margin-top: 50px;
     text-align: center;
+    .container {
+        max-height: 1020px;
+    }
+    .wrapper {
+        background-color: $darkblue;
+        border-radius: 10px;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 20px;
+        overflow: hidden;
+    }
     img {
-        width: 260px;
-        display: flex;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(230deg) saturate(600%) contrast(0.8);
-    }
-    h1 {
-        color: white;
-        font-weight: weights(bold);
-        font-family: $headings;
-        padding: 20px 40px 15px 40px
-    }
-    #main {
-        color: $white75;
-        font-family: $paragraph;
-        padding: 2px 20px 10px 20px;
-        letter-spacing: 2px;
-        line-height: 18px;
-        font-size: 0.7rem;
-    }
-}
-#insights {
-    color: $softviolet
-}
-.font {
-    color: $white60;
-    font-family: $paragraph;
-    text-transform: uppercase;
-    font-size: 0.6rem;
-    padding-bottom: 10px;
-}
-.stat {
-    font-family: $headings;
-    color: white;
-    font-weight: weights(bold);
-    padding-bottom: 8px;
-}
-strong {
-    color: white;
-    font-family: $headings;
-}
-footer {
-    font-family: $paragraph;
-    text-align: center;
-    color: $white60;
-    margin-top: 10px;
-    font-size: 12px;
-    a {
-        color: white;
-        text-decoration: none;
+        width: 100%;
+        height: 100%;
+        filter: sepia(45%) saturate(811%) hue-rotate(228deg) brightness(50%) contrast(100%);
     }
 }
 
-@import 'responsive';
+.text-box {
+    padding: 15px;
+    .heading {
+        color: $white;
+        font-family: $stat;
+        font-weight: weights(bold);
+        padding-bottom: 2px;
+        #insights {
+            color: $softviolet;
+        }
+    }
+    .main {
+        color: $white75;
+        line-height: 1.2;
+        padding: 10px;
+        font-weight:weights(regular);
+    }
+}
+
+.stats {
+    .num {
+        color: $white;
+        font-weight: weights(bold);
+    }
+    .font {
+        color: $white60;
+        text-transform: uppercase;
+        font-family: $stat;
+        font-weight:weights(regular);
+    }
+}

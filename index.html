@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   <link rel="stylesheet" href="app/css/main.css">
   <title>Frontend Mentor | Stats preview card component</title>
 </head>
-
 <body>
-  <section>
-    <picture>
-      <source media="(min-width: 700px)" srcset="images/image-header-desktop.jpg" type="image/jpeg">
-      <img src="images/image-header-mobile.jpg" alt="Coders">
-    </picture>
-    <div id="info">
-      <h1>Get <span id="insights">insights</span> that help your business grow.</h1>
-      <p id="main">Discover the benefits of data analytics and make better decisions regarding revenue, customer
-        experience, and overall efficiency.</p>
+  <div class="container">
+    <div class="wrapper">
+    <div class="img">
+      <picture>
+        <source media="(min-width: 720px)" srcset="images/image-header-desktop.jpg" style="object-fit: cover; height:100%;">
+        <img src="images/image-header-mobile.jpg"></picture>
     </div>
+      <div class="text-box">
+        <h1 class="heading">Get <span id="insights">insights</span> that help your business grow.</h1>  
+        <p class="main">Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
+        <div class="stats">
+          <div>
+            <p class="num">10k+</p>
+            <p class="font">companies</p>
+          </div>
+          <div>
+            <p class="num">314</p>
+            <p class="font">templates</p>
+          </div>
+          <div>
+            <p class="num">12M+</p>
+            <p class="font">queries</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <div id="stats">
-      <span class="stat">10k</span>
-      <span class="font">companies</span>
-      <span class="stat">314</span>
-      <span class="font">templates</span>
-      <span class="stat">12M+</span>
-      <span class="font">queries</span>
-    </div>
-  </section>
-  <footer>
-    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Ellis</a>.</p>
-  </footer>
+  <!-- <footer>
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.Coded by <a href="https://github.com/nbycoder">Ellis</a>.
+  </footer> -->
 </body>
-
 </html>

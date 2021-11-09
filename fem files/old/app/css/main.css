@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@use 'resets';
+body {
+  background-color: #090b1a;
+  display: flex;
+  justify-content: space-between; }
+
+section {
+  background-color: #1b1938;
+  width: 260px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  margin-top: 50px;
+  text-align: center; }
+  section img {
+    width: 260px;
+    height: 100%;
+    display: flex;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(230deg) saturate(600%) contrast(0.8); }
+  section h1 {
+    color: white;
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    padding: 20px 40px 15px 40px; }
+  section #main {
+    color: rgba(255, 255, 255, 0.75);
+    font-family: "Lexend Deca", sans-serif;
+    padding: 2px 20px 10px 20px;
+    letter-spacing: 2px;
+    line-height: 18px;
+    font-size: 0.7rem; }
+
+#insights {
+  color: #aa5cdb; }
+
+.stat, .font {
+  display: flex;
+  justify-content: center; }
+
+.font {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Lexend Deca", sans-serif;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  padding-bottom: 10px; }
+
+.stat {
+  font-family: "Inter", sans-serif;
+  color: white;
+  font-weight: 700;
+  padding-bottom: 8px; }
+
+strong {
+  color: white;
+  font-family: "Inter", sans-serif; }
+
+footer {
+  font-family: "Lexend Deca", sans-serif;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 10px;
+  font-size: 12px; }
+  footer a {
+    color: white;
+    text-decoration: none; }
+
+@media (min-width: 480px) {
+  section {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 465px;
+    height: 280px;
+    margin: auto; }
+    section img {
+      border-radius: 0 10px 10px 0; }
+    section h1 {
+      font-size: 1.2em;
+      margin: auto;
+      width: 40vw; } }
+
+/*# sourceMappingURL=main.css.map */

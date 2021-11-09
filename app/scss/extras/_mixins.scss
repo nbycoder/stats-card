@@ -1,0 +1,29 @@
+@use 'breakpoints' as *;
+
+//* large smartphone
+@mixin m-small {
+    @media (min-width: $bp-small) {
+        @content;
+    }
+}
+
+//* small tablet
+@mixin m-medium {
+    @media (min-width: $bp-medium) {
+        @content;
+    }
+}
+
+//* small desktop
+@mixin m-big {
+     @media (min-width: $bp-big) {
+         @content;
+     }
+}
+
+//* desktop
+@mixin m-bigger {
+    @media (min-width: $bp-bigger) {
+        @content;
+    }
+}

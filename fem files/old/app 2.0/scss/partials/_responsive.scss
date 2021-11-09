@@ -1,0 +1,11 @@
+@media only screen and (max-width: 765px) {
+    body {
+        text-align: center;
+    }
+    .wrapper {
+        grid-template-columns: 1fr;
+        img {
+        order: -1;
+        }
+    }
+}
