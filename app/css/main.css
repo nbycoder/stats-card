@@ -1,84 +1,153 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 * {
-  box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media only screen and (max-width: 765px) {
-  body {
-    text-align: center;
+@media (min-width: 570px) {
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 80px 8px 80px;
+    font-size: 0.95rem;
   }
 
-  .wrapper {
-    grid-template-columns: 1fr;
-  }
-
-  .img {
+  .text-box {
     order: -1;
+    padding: 8px;
+  }
+}
+@media (min-width: 720px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .text-box {
+    order: -1;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  .main {
+    font-size: 0.91rem;
+  }
+
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+}
+@media (min-width: 900px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .text-box {
+    order: -1;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  .main {
+    font-size: 1rem;
+  }
+
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px 15px 50px;
+  }
+}
+@media (min-width: 1020px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .text-box {
+    order: -1;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 70px 20px 70px;
+    font-size: 0.97rem;
   }
 }
 body {
-  background-color: #090b1a;
-  font-family: "Lexend Deca", sans-serif;
-  display: flex;
-  align-items: center;
-  min-height: 100vh;
   font-size: 15px;
+  font-family: "Inter", sans-serif;
+  background-color: #090b1a;
+  text-align: center;
 }
 body .container {
-  max-width: 1020px;
-  margin: 0 auto;
+  max-height: 1020px;
 }
 body .wrapper {
   background-color: #1b1938;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   border-radius: 10px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20px;
   overflow: hidden;
-  margin: 2rem;
 }
-
-img {
+body img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
   filter: sepia(45%) saturate(811%) hue-rotate(228deg) brightness(50%) contrast(100%);
 }
 
 .text-box {
-  padding: 70px;
+  padding: 15px;
 }
 .text-box .heading {
   color: white;
-  font-family: "Inter", sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   font-weight: 700;
-  padding-bottom: 20px;
+  padding-bottom: 2px;
 }
 .text-box .heading #insights {
   color: #aa5cdb;
 }
 .text-box .main {
   color: rgba(255, 255, 255, 0.75);
-  padding-bottom: 20px;
-  line-height: 1.3;
+  line-height: 1.2;
+  padding: 10px;
+  font-weight: 400;
 }
 
-.stats {
-  display: flex;
-  justify-content: space-between;
-}
 .stats .num {
   color: white;
   font-weight: 700;
-  font-family: "Inter", sans-serif;
-  font-size: 22px;
-  padding-top: 50px;
 }
 .stats .font {
-  text-transform: uppercase;
   color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=main.css.map */

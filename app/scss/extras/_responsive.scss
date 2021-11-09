@@ -1,0 +1,87 @@
+@use 'mixins' as *;
+
+
+@include m-small {
+    .stats {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 80px 8px 80px;
+    font-size: 0.95rem;
+    }
+    .text-box {
+        order: -1;
+        padding: 8px;
+    }
+}
+@include m-medium {
+        .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+        align-items: center;
+        }
+        .text-box {
+            order: -1;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 1.4rem;
+        }
+        .main {
+        font-size: 0.91rem;
+        }
+        .stats {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        }      
+}
+
+@include m-big {
+    .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    align-items: center;
+    }
+    .text-box {
+        order: -1;
+        padding: 15px;
+    }
+    h1 {
+        font-size: 1.7rem;
+    }
+    .main {
+    font-size: 1rem;
+    }
+    .stats{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px 15px 50px;
+    }
+}
+@include m-bigger {
+    .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    align-items: center;
+    }
+    .text-box {
+        order: -1;
+        padding: 20px;
+    }
+    h1  {
+        font-size: 1.75rem;
+    }
+    .stats {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 70px 20px 70px;
+    font-size: 0.97rem;
+}
+}
+
+
+
+

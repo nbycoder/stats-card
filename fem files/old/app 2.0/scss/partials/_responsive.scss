@@ -4,8 +4,8 @@
     }
     .wrapper {
         grid-template-columns: 1fr;
-    }
-    .img {
+        img {
         order: -1;
+        }
     }
 }
