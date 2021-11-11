@@ -2,15 +2,23 @@
 
 
 @include m-small {
+    body {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 100vh;
+    }
     .stats {
-    display: flex;
-    justify-content: space-between;
-    padding: 2px 80px 8px 80px;
-    font-size: 0.95rem;
+        display: flex;
+        justify-content: space-between;
+        padding: 2px 80px 8px 80px;
+        font-size: 0.95rem;
     }
     .text-box {
         order: -1;
         padding: 8px;
+        height: 100%;
     }
 }
 @include m-medium {
@@ -24,6 +32,7 @@
         .text-box {
             order: -1;
             padding: 20px;
+            height: 100%;
         }
         h1 {
             font-size: 1.4rem;
@@ -33,23 +42,24 @@
             text-align: left;
         }
         .stats {
-        display: flex;
-        justify-content: space-between;
-        padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
         }      
 }
 
 @include m-big {
     .wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 0 auto;
-    width: 800px;
-    align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+        width: 800px;
+        align-items: center;
     }
     .text-box {
         order: -1;
         padding: 15px;
+        height: 100%;
     }
     h1 {
         font-size: 1.7rem;
@@ -59,22 +69,23 @@
         text-align: left;
         line-height: 1.2;
     }
-    .stats{
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 50px 15px 50px;
+    .stats {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 50px 15px 50px;
     }
 }
 @include m-bigger {
     .wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 0 auto;
-    align-items: center;
-    width: 1000px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+        align-items: center;
+        width: 1000px;
     }
     .text-box {
         order: -1;
+        height: 100%;
         padding: 20px;
     }
     h1  {

@@ -61,9 +61,11 @@ body {
     }
 }
 
-footer {
+footer > p {
     padding-top: 2px;
+    color: $white75;
     & a {
     text-decoration: none;
+    color: $white;
     }
 }
